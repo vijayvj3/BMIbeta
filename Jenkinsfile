@@ -23,7 +23,7 @@ pipeline {
         }
         stage('Deployment to AWS'){
             steps{
-            deploy adapters: [tomcat9(credentialsId: 'tomcatCredentials', path: '', url: 'http://3.15.0.139:8088/')], contextPath: 'BMI', onFailure: false, war: '**/target/*.war'
+            deploy adapters: [tomcat9(credentialsId: 'tomcatCredentials', path: 'BMICalculatorApplication', url: 'http://3.15.0.139:8088/')], contextPath: 'BMI', onFailure: false, war: '**/target/*.war'
             }
         }
       }
