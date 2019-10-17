@@ -24,7 +24,7 @@ pipeline {
                 withCredentials([usernamePassword(credentialsId: 'nexus-credentialss', passwordVariable: 'password', usernameVariable: 'username'),string(credentialsId: 'NEXUS_URL', variable: 'nexus_url')]){
                     //sh 'curl -v -F r=devopstraining -F hasPom=true -F e=jar -F file=@pom.xml -F file=@target/Calc-${BUILD_NUMBER}.jar -u ${username}:${password} http://18.224.155.110:8081/nexus/content/repositories/devopstraining/comrades/Calc-${BUILD_NUMBER}.jar'
                     //sh 'curl -u ${username}:${password} --upload-file target/Calc-${BUILD_NUMBER}.jar http://18.224.155.110:8081/nexus/content/repositories/devopstraining/comrades/Calc.jar'
-                    sh 'curl -F file=@target/Calc-${BUILD_NUMBER}.jar -u ${username}:${password} http://${nexus_url}/nexus/content/repositories/devopstraining/comrades/Calc-${BUILD_NUMBER}.jar'
+                    sh 'curl -F file=@target/BMICalc-${BUILD_NUMBER}.jar -u ${username}:${password} http://${nexus_url}/nexus/content/repositories/devopstraining/comrades/BMICalc-${BUILD_NUMBER}.jar'
                 }
             } 
        }
