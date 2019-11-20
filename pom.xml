@@ -5,7 +5,7 @@
   <version>-${BUILD_NUMBER}</version>
   <packaging>jar</packaging>
   <name>Calc</name>
-  <description>Calculator application</description>
+  <description>Calculator  application</description>
   <build>
   <plugins>
 	<plugin>
