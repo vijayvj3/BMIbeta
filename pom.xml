@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>comrades.aea</groupId>
   <artifactId>BMICalc</artifactId>
-  <version>-${BUILD_NUMBER}</version>
+  <version>${BUILD_NUMBER}</version>
   <packaging>jar</packaging>
   <name>Calc</name>
   <description>Calculator  application</description>
